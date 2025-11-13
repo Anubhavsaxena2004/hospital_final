@@ -1,0 +1,40 @@
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Force zero padding for registration page */
+.main-content:has(.flip-container) {
+  padding: 0px 20px 20px 20px !important;
+}
+
+/* Reduce padding for registration page */
+.main-content .flip-container {
+  margin-top: 0px !important;
+}
+
+/* Override main content padding for registration page */
+.main-content:has(.flip-container) {
+  padding-top: 5px !important;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Specific styling for registration page */
+.registration-page {
+  margin-top: 0px !important;
+}
+
+.main-content:has(.registration-page) {
+  padding-top: 0px !important;
+}
+
+/* Add any other global styles you need */

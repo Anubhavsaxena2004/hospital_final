@@ -1,0 +1,183 @@
+/* src/components/HospitalForm.css */
+.hospital-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #004080;
+  box-shadow: 0 0 0 2px rgba(0, 64, 128, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.tag-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-input input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.tag-input button {
+  padding: 8px 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.tag-input button:hover {
+  background-color: #003366;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.tag button:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+.submit-button {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hospital-form {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-row .form-group {
+    min-width: 100%;
+  }
+  
+  .tag-input {
+    flex-direction: column;
+  }
+  
+  .tag-input input {
+    min-width: 100%;
+  }
+  
+  .tag-input button {
+    width: 100%;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-form {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 12px;
+  }
+  
+  .tags {
+    gap: 6px;
+  }
+  
+  .tag {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

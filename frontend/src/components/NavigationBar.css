@@ -1,0 +1,54 @@
+/* src/components/NavigationBar.css */
+.navigation-bar {
+  background-color: #004080;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #ffcc00;
+}
+
+.sign-in-button {
+  background-color: #ffcc00;
+  color: #004080;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #e6b800;
+}

@@ -1,0 +1,24 @@
+/* src/components/EmergencyContacts.css */
+.emergency-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.emergency-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.emergency-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emergency-card li span:first-child {
+  font-weight: 500;
+  color: #004080;
+}

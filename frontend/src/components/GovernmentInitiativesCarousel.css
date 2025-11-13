@@ -1,0 +1,172 @@
+/* src/components/GovernmentInitiativesCarousel.css */
+.government-initiatives-carousel {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Ensure the carousel occupies the full width of the grid and doesn't overlap other cards */
+  grid-column: 1 / -1;
+  z-index: 0;
+}
+
+.government-initiatives-carousel h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: white;
+  padding: 15px 0;
+}
+
+.playpause {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.playpause button {
+  background: #3498db;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.playpause button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.carousel-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item a:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3498db;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.carousel-control:hover {
+  background: #3498db;
+  color: white;
+}
+
+.carousel-control.prev {
+  left: 15px;
+}
+
+.carousel-control.next {
+  right: 15px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .government-initiatives-carousel {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .carousel-control {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .playpause button {
+    width: 35px;
+    height: 35px;
+  }
+}

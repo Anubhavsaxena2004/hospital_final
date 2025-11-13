@@ -1,0 +1,28 @@
+/* src/components/RecentActivity.css */
+.activity-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.activity-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-action {
+  font-weight: 500;
+}
+
+.activity-time {
+  color: #666;
+  font-size: 0.9rem;
+}
